@@ -43,7 +43,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false
+        docs: false,
         blog: {
           routeBasePath: '/',
           showReadingTime: true,
