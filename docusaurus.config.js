@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'manto-png',
-  tagline: 'portable network graphic',
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -43,6 +43,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        docs: {
+          sidebarPath: './sidebars.js',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -94,8 +101,47 @@ const config = {
       footer: {
         style: 'dark',
         links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Tutorial',
+                to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'X',
+                href: 'https://x.com/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} manto-png Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
