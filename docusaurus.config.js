@@ -88,9 +88,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-            ],
-          },
         copyright: `Copyright © ${new Date().getFullYear()} Me. Built with Docusaurus.`,
       },
       prism: {
